@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>form doldurmaq</title>
+    <link rel="stylesheet" href="./css/style form.css">
+</head>
+<body><!--action a action.php ve ya action.phyton a backendde yoxlayir duzluyu-->
+<h1>Sigorta sirketine muraciet formu </h1>
+<form action="action.phyton">
+<label>Ad Soyad:</label>
+<input type="text" placeholder="Entiqe Celilova" required>
+<br>
+<label>Sifrə:</label>
+<input type="password" placeholder="*********" required maxlength="8">
+<br>
+<label>E-posta:</label>
+<input type="e-posta"  placeholder="e-posta">
+<br>
+<label >Telefon:</label>
+<input type="telefon"placeholder="+994 55-555-55-55" >
+<br>
+<label>Dogum tarixi:</label>
+<input type="date">
+<br>
+<label>Qardas ve baci sayi:</label>
+<input type="number" min="1" max="10">
+<br>
+<!--name eyni olanda dairelerden 1 ni ferqli olanda ikisini secmek olur.value backende melumat ucu vacibdi.-->
+<label >Cinsiyyeti:</label>
+<label >kisi</label>
+<input type="radio" name="cinsi" value="kisi">
+<label>qadin</label>
+<input type="radio" name="cinsi" value="qadin">
+<br>
+<!--asagi acilnan menyu select teq/optionla secilecek secimlerin sayi gosterir.value hisse backende gore.-->
+<label >Uzv oldugu sigorta sirketleri:</label>
+<select>
+<option value="xalq">Xalq </option>
+<option value="xalq">Pasa</option>
+</select>
+<br>
+<label >Hal-hazirda isləyirmi?</label>
+<input type="checkbox" >
+<br>
+<label >Elave melumat:</label>
+<br>
+<textarea rows="3" cols="30"></textarea>
+<br>
+<label for="">Vacib senedler:</label>
+<br>
+<input type="file" accept="doc.docx.pdf">
+<br>
+<input type="reset">
+<input type="submit">
+    </form>
+</body
+</html>

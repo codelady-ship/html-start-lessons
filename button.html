@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<body>
+    <!--a tegini ayirib button qoyuruq-->
+    <a href="https://big.az/13701-maraqli-sekiller.html">
+    <button  style="background-color: aqua;color: black; border-radius:10px">butona tikla</button>
+    </a>
+    <br><hr>
+    <!--p teqi aciriq sonra
+      script function-a ad verib.bezekli motrize aciriq sonra buttonda onclick-e funksiyadaki adi yaziriq.p etiketindeki yazinin deyismesi ucun ona id verek.bezekli moterizeye document.get elementby id moterize dirnaq icinde id mizin sozunu yaziriq.noqte qoyub,innerhtml-e buttona basanda hansi soz gelsin isteyirik onu yaziriq/qisa desek-buttonun on clikde funksiyani yazdiq onu tiklayanda id-si ac olan p etiketimizdeki deyeri deyisecek innethtmldeki soz olacaq-->
+    <button onclick="tikla()" style="background-color: aqua;color: black; border-radius:10px"> tikla</button>
+    <p id="ac">buttona bas!</p>
+    <script>
+        function tikla()
+        {
+         document.getElementById("ac").innerHTML="acildi!"
+        }
+    </script>
+    <hr>
+    <!--basqa buton numunesi-->
+   <button onclick="soz()" style="background-color: rgb(255, 0, 140);color: border-radius:10px">duymeni bas</button>
+<p id="ad">duymeni bas!</p>
+<script>
+    function soz()
+    {
+    document.getElementById("ad").innerHTML= "duyməni bastiniz!"
+    }
+</script>
+</body>
+</html>
